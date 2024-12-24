@@ -5,9 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/output.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+    <link rel="stylesheet" href="/css/output.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/index.css">
+
+    <meta name="keywords" content=" Yashaswi Sharma Wasti, Full Stack Developer , ">
+
+
+
+    <meta name="description" content="Explore my creative portfolio showcasing a diverse range of projects, including
+        web design, branding, and digital art. Discover my innovative approach, attention to detail, and passion for
+        delivering high-quality solutions tailored to client needs I possess a strong set of skills across various
+        creative and technical domains. My expertise includes web design, user experience (UX) design, and front-end
+        development with proficiency in HTML, CSS, and JavaScript. I also specialize in graphic design, branding, and
+        visual storytelling, using tools like Adobe Creative Suite (Photoshop, Illustrator, InDesign). With a keen eye
+        for detail, I excel in creating engaging digital experiences, whether it’s designing responsive websites or
+        crafting compelling visual identities. I am passionate about problem-solving, delivering solutions that are both
+        functional and aesthetically pleasing.">
+
+    <meta property="og:image" content="./image/bbg.png">
+    <meta property="og:title" content="Yashaswi Sharma Wasti | Full Stack Developer">
+    <meta property="og:description"
+        content="Explore my creative portfolio showcasing a diverse range of projects, including web design, branding, and digital art. Discover my innovative approach, attention to detail, and passion for delivering high-quality solutions tailored to client needs I possess a strong set of skills across various creative and technical domains. My expertise includes web design, user experience (UX) design, and front-end development with proficiency in HTML, CSS, and JavaScript. I also specialize in graphic design, branding, and visual storytelling, using tools like Adobe Creative Suite (Photoshop, Illustrator, InDesign). With a keen eye for detail, I excel in creating engaging digital experiences, whether it’s designing responsive websites or crafting compelling visual identities. I am passionate about problem-solving, delivering solutions that are both functional and aesthetically pleasing">
 
 </head>
 
@@ -19,7 +42,7 @@
                     <h1 class="text-2xl font-semibold"> <span class="text-orange-700">Yash</span>aswi</h1>
                 </div>
 
-                <ul class="flex gap-40">
+                <ul class="hidden md:flex gap-40">
                     <li>
                         <a href="#portfolio">Portfolio</a>
                     </li>
@@ -36,6 +59,14 @@
 
                 </ul>
 
+                <div class="text-center">
+                    <button class="md:hidden" type="button" data-drawer-target="drawer-example"
+                        data-drawer-show="drawer-example" aria-controls="drawer-example">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+
+
                 <div>
                     <a href="#contact" class="font-medium bg-white px-4 py-1 rounded text-black">Contact Me</a>
                 </div>
@@ -48,6 +79,42 @@
 
     </header>
 
+
+    <!-- drawer component -->
+    <div id="drawer-example"
+        class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-[#312222] w-80 text-white"
+        tabindex="-1" aria-labelledby="drawer-label">
+        <h5 class="text-3xl">Menu</h5>
+        <button type="button" data-drawer-hide="drawer-example" aria-controls="drawer-example"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Close menu</span>
+        </button>
+        <ul class="space-y-4 pt-8">
+            <li>
+                <a href="#portfolio">Portfolio</a>
+            </li>
+
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+
+            <li>
+                <a href="#contact">Contact </a>
+            </li>
+
+        </ul>
+
+
+
+    </div>
+
+
     <main>
         <section id="portfolio" class="py-10">
             <div class="container grid grid-cols-2 items-center">
@@ -55,7 +122,8 @@
                     <h1 class="text-3xl font-semibold">
                         Hi <br>
                         <span class="text-5xl">
-                            I am <span class="text-orange-600">Yashaswi Sharma Wasti</span><br> I am a Full Stack Developer
+                            I am <span class="text-orange-600">Yashaswi Sharma Wasti</span><br> I am a Full Stack
+                            Developer
                         </span>
 
                     </h1>
@@ -85,15 +153,18 @@
                     <h1 class="text-2xl">About <span class="text text-orange-600">Me</span></h1>
                     <h1 class="text-4xl font-bold">Full <span class="text-orange-600">Stack Developer</span></h1>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, quae. Officiis voluptatibus necessitatibus nesciunt magnam reiciendis? Repudiandae corporis rerum, harum omnis incidunt odit deleniti earum distinctio impedit atque laudantium perferendis?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, quae. Officiis
+                        voluptatibus necessitatibus nesciunt magnam reiciendis? Repudiandae corporis rerum, harum
+                        omnis incidunt odit deleniti earum distinctio impedit atque laudantium perferendis?
                     </p>
                     <div>
-                        <a href="./image/Yashaswi_Wasti__-_Student (1).pdf" class="font-medium  text-white px-4 py-1 rounded bg-orange-600">Experience</a>
+                        <a href="./image/Yashaswi_Wasti__-_Student (1).pdf"
+                            class="font-medium  text-white px-4 py-1 rounded bg-orange-600">Experience</a>
                     </div>
-                
+
                 </div>
-                
-            <div>              
+
+                <div>
         </section>
         <section id="contact" class="py-10">
             <div class="container-grid text-center"></div>
@@ -113,31 +184,34 @@
                         <input placeholder="Subject" type="text" name="subject" id="subject" class="py-2 px-4">
                     </div>
                     <div class="input-shadow rounded-md">
-                       <textarea name="message" id="message " required class="w-full h-full px-2 py-4" ></textarea>
+                        <textarea name="message" id="message " required class="w-full h-full px-2 py-4"></textarea>
                     </div>
                     <div class="text-center">
-                        <a href="" class="px-4 py-y bg-black text-white rounded hover:shadow-lg text-center">Hire Me</a>
+                        <a href="" class="px-4 py-y bg-black text-white rounded hover:shadow-lg text-center">Hire
+                            Me</a>
                     </div>
-                
-                
+
+
                 </form>
 
             </div>
         </section>
     </main>
+
     <footer class="bg-[#312222] text-white py-10  space-y-4 ">
         <div class="justify-center flex gap-4">
-            <a  href="https://www.facebook.com/" target="_blank">
+            <a href="https://www.facebook.com/" target="_blank">
                 <i class="fa-brands fa-facebook text-2xl"></i>
 
             </a>
-            <a  href="https://www.instagram.com/" target="_blank">
+            <a href="https://www.instagram.com/" target="_blank">
                 <i class="fa-brands fa-instagram text-2xl "></i>
             </a>
-            <a href="https://www.google.com/search?q=linkedin&rlz=1C1VIQF_enUS1074US1074&oq=link&gs_lcrp=EgZjaHJvbWUqGAgAEAAYQxiDARjjAhixAxjJAxiABBiKBTIYCAAQABhDGIMBGOMCGLEDGMkDGIAEGIoFMhsIARAuGEMYgwEYxwEYsQMYyQMY0QMYgAQYigUyFAgCEEUYORhDGIMBGLEDGIAEGIoFMhIIAxAAGEMYgwEYsQMYgAQYigUyEggEEAAYQxiDARixAxiABBiKBTIYCAUQLhhDGIMBGMcBGLEDGNEDGIAEGIoFMgoIBhAAGJIDGIAEMg8IBxAAGEMYsQMYgAQYigUyDAgIEAAYQxiABBiKBdIBCDIxMDRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#vhid=zephyr:0&vssid=atritem-https://np.linkedin.com/" target="_blank">
+            <a href="https://www.google.com/search?q=linkedin&rlz=1C1VIQF_enUS1074US1074&oq=link&gs_lcrp=EgZjaHJvbWUqGAgAEAAYQxiDARjjAhixAxjJAxiABBiKBTIYCAAQABhDGIMBGOMCGLEDGMkDGIAEGIoFMhsIARAuGEMYgwEYxwEYsQMYyQMY0QMYgAQYigUyFAgCEEUYORhDGIMBGLEDGIAEGIoFMhIIAxAAGEMYgwEYsQMYgAQYigUyEggEEAAYQxiDARixAxiABBiKBTIYCAUQLhhDGIMBGMcBGLEDGNEDGIAEGIoFMgoIBhAAGJIDGIAEMg8IBxAAGEMYsQMYgAQYigUyDAgIEAAYQxiABBiKBdIBCDIxMDRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#vhid=zephyr:0&vssid=atritem-https://np.linkedin.com/"
+                target="_blank">
                 <i class="fa-brands fa-linkedin text-2xl"></i>
             </a>
-            <a  href="https://github.com/yashyash999/web" target="_blank">
+            <a href="https://github.com/yashyash999/web" target="_blank">
                 <i class="fa-brands fa-github text-2xl"></i>
             </a>
         </div>
@@ -164,6 +238,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </body>
 
 </html>
