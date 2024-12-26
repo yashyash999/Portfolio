@@ -1,0 +1,13 @@
+.container {
+    width: 90%;
+    margin: auto;
+}
+.img-shadow{
+    box-shadow: 0 0 10px #ea580c;
+}
+.input-shadow{
+    box-shadow: 0 0 6px gray;
+}
+body{
+    scroll-behavior: smooth;
+}
